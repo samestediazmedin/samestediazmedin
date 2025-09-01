@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Grid - Ejemplo</title>
+    <link rel="stylesheet" href="../estilos/grid.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header">
+            <div class="logo">
+                <h1>Grid Layout</h1>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#galeria">Galería</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="search">
+                <input type="search" placeholder="Buscar...">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <h2>CSS Grid Layout</h2>
+                <p>Diseño moderno usando CSS Grid para crear layouts complejos y flexibles</p>
+            </section>
+
+            <section class="features">
+                <div class="feature-card feature-1">
+                    <h3>🎯 Precisión</h3>
+                    <p>Control exacto sobre la posición de cada elemento</p>
+                </div>
+                <div class="feature-card feature-2">
+                    <h3>📱 Responsivo</h3>
+                    <p>Se adapta automáticamente a diferentes pantallas</p>
+                </div>
+                <div class="feature-card feature-3">
+                    <h3>🔧 Flexible</h3>
+                    <p>Fácil reorganización de elementos</p>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Galería de Imágenes</h2>
+                <div class="image-grid">
+                    <div class="image-item large">
+                        <div class="image-placeholder">
+                            <span>🖼️</span>
+                            <p>Imagen Principal</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="image-placeholder">
+                            <span>📷</span>
+                            <p>Imagen 1</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="image-placeholder">
+                            <span>📸</span>
+                            <p>Imagen 2</p>
+                        </div>
+                    </div>
+                    <div class="image-item tall">
+                        <div class="image-placeholder">
+                            <span>🎨</span>
+                            <p>Imagen Vertical</p>
+                        </div>
+                    </div>
+                    <div class="image-item">
+                        <div class="image-placeholder">
+                            <span>🌅</span>
+                            <p>Imagen 3</p>
+                        </div>
+                    </div>
+                    <div class="image-item wide">
+                        <div class="image-placeholder">
+                            <span>🌄</span>
+                            <p>Imagen Panorámica</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products">
+                <h2>Productos Destacados</h2>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-image">📱</div>
+                        <h3>Smartphone</h3>
+                        <p class="price">€699</p>
+                        <button>Añadir al carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">💻</div>
+                        <h3>Laptop</h3>
+                        <p class="price">€1299</p>
+                        <button>Añadir al carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">⌚</div>
+                        <h3>Smartwatch</h3>
+                        <p class="price">€399</p>
+                        <button>Añadir al carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">🎧</div>
+                        <h3>Auriculares</h3>
+                        <p class="price">€199</p>
+                        <button>Añadir al carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">📷</div>
+                        <h3>Cámara</h3>
+                        <p class="price">€899</p>
+                        <button>Añadir al carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">🖥️</div>
+                        <h3>Monitor</h3>
+                        <p class="price">€449</p>
+                        <button>Añadir al carrito</button>
+                    </article>
+                </div>
+            </section>
+
+            <section class="dashboard">
+                <h2>Dashboard Layout</h2>
+                <div class="dashboard-grid">
+                    <div class="widget sales">
+                        <h3>Ventas</h3>
+                        <p class="metric">€25,430</p>
+                        <small>+12% este mes</small>
+                    </div>
+                    <div class="widget users">
+                        <h3>Usuarios</h3>
+                        <p class="metric">1,234</p>
+                        <small>+5% esta semana</small>
+                    </div>
+                    <div class="widget chart">
+                        <h3>Gráfico</h3>
+                        <div class="chart-placeholder">📊 Aquí iría un gráfico</div>
+                    </div>
+                    <div class="widget activity">
+                        <h3>Actividad Reciente</h3>
+                        <ul>
+                            <li>Usuario A compró producto X</li>
+                            <li>Nueva reseña en producto Y</li>
+                            <li>Inventario actualizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget-sidebar">
+                <h3>Información</h3>
+                <p>CSS Grid permite crear layouts complejos de manera sencilla y mantenible.</p>
+            </div>
+            <div class="widget-sidebar">
+                <h3>Ventajas</h3>
+                <ul>
+                    <li>Control bidimensional</li>
+                    <li>Menos código HTML</li>
+                    <li>Alineación automática</li>
+                    <li>Gaps nativos</li>
+                </ul>
+            </div>
+        </aside>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre CSS Grid</h4>
+                    <p>La herramienta más poderosa para crear layouts web modernos.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <a href="#">Documentación</a>
+                    <a href="#">Ejemplos</a>
+                    <a href="#">Tutoriales</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>info@gridlayout.com</p>
+                    <p>&copy; 2024 Grid Example</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

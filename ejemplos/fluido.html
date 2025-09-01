@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Fluido - Ejemplo</title>
+    <link rel="stylesheet" href="../estilos/fluido.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Diseño Fluido</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <h2>Bienvenido al Diseño Fluido</h2>
+                <p>Este diseño utiliza porcentajes y se adapta al ancho de tu pantalla. ¡Redimensiona la ventana para verlo en acción!</p>
+            </section>
+
+            <section class="content">
+                <article class="article">
+                    <h3>Características del Diseño Fluido</h3>
+                    <p>El diseño fluido utiliza porcentajes en lugar de píxeles fijos, lo que permite que el contenido se expanda y contraiga con el tamaño del navegador. Esto maximiza el uso del espacio disponible en cualquier pantalla.</p>
+                    
+                    <h4>Ventajas del diseño fluido:</h4>
+                    <ul>
+                        <li>Mejor aprovechamiento del espacio disponible</li>
+                        <li>Se adapta automáticamente a diferentes tamaños de pantalla</li>
+                        <li>No requiere scroll horizontal en pantallas pequeñas</li>
+                        <li>Una sola versión funciona en múltiples dispositivos</li>
+                    </ul>
+                </article>
+
+                <aside class="sidebar">
+                    <h3>Propiedades CSS Clave</h3>
+                    <div class="code-example">
+                        <code>
+                            width: 70%;<br>
+                            max-width: 1200px;<br>
+                            min-width: 320px;
+                        </code>
+                    </div>
+                    
+                    <h3>Consejos</h3>
+                    <ul>
+                        <li>Usa max-width para evitar líneas muy largas</li>
+                        <li>Establece min-width para mantener legibilidad</li>
+                        <li>Combina con media queries para mejor control</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section class="demo-boxes">
+                <h3>Cajas que se adaptan</h3>
+                <div class="box-container">
+                    <div class="box">Caja 1 (25%)</div>
+                    <div class="box">Caja 2 (25%)</div>
+                    <div class="box">Caja 3 (25%)</div>
+                    <div class="box">Caja 4 (25%)</div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Ejemplo de Diseño Fluido. Se adapta a tu pantalla.</p>
+        </footer>
+    </div>
+</body>
+</html>

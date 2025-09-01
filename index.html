@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Diseño de Páginas Web - Índice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 3rem;
+            font-size: 1.2rem;
+        }
+        
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .example-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .example-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border-color: #667eea;
+        }
+        
+        .example-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .example-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .example-card p {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .example-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .example-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .exercises-section {
+            background: #e8f4f8;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .exercises-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .exercises-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        
+        .exercise-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .exercise-item h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .exercise-item p {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tipos de Diseño de Páginas Web</h1>
+        <p class="subtitle">Explora diferentes enfoques de diseño web con ejemplos interactivos</p>
+        
+        <div class="examples-grid">
+            <div class="example-card">
+                <div class="example-icon">📐</div>
+                <h3>Diseño Fijo</h3>
+                <p>Diseño con ancho fijo en píxeles que mantiene dimensiones constantes independientemente del tamaño de pantalla.</p>
+                <a href="ejemplos/fijo.html" class="example-link">Ver Ejemplo</a>
+            </div>
+            
+            <div class="example-card">
+                <div class="example-icon">🌊</div>
+                <h3>Diseño Fluido</h3>
+                <p>Diseño que utiliza porcentajes para adaptarse automáticamente al ancho del navegador.</p>
+                <a href="ejemplos/fluido.html" class="example-link">Ver Ejemplo</a>
+            </div>
+            
+            <div class="example-card">
+                <div class="example-icon">📱</div>
+                <h3>Diseño Responsivo</h3>
+                <p>Diseño moderno que se adapta perfectamente a cualquier dispositivo usando media queries y unidades flexibles.</p>
+                <a href="ejemplos/responsivo.html" class="example-link">Ver Ejemplo</a>
+            </div>
+            
+            <div class="example-card">
+                <div class="example-icon">🎯</div>
+                <h3>Diseño Grid</h3>
+                <p>Utiliza CSS Grid para crear layouts complejos con control preciso sobre filas y columnas.</p>
+                <a href="ejemplos/grid.html" class="example-link">Ver Ejemplo</a>
+            </div>
+            
+            <div class="example-card">
+                <div class="example-icon">📜</div>
+                <h3>Single Page</h3>
+                <p>Todo el contenido en una sola página con navegación suave por secciones.</p>
+                <a href="ejemplos/single-page.html" class="example-link">Ver Ejemplo</a>
+            </div>
+        </div>
+        
+        <div class="exercises-section">
+            <h2>Ejercicios de JavaScript Incluidos</h2>
+            <div class="exercises-grid">
+                <div class="exercise-item">
+                    <h4>ejercicios.js</h4>
+                    <p>Filtrado de estudiantes aprobados usando filter() y map()</p>
+                </div>
+                <div class="exercise-item">
+                    <h4>ejercicio2.js</h4>
+                    <p>Operaciones con números pares y duplicación de arrays</p>
+                </div>
+                <div class="exercise-item">
+                    <h4>ejercicio3.js</h4>
+                    <p>Cálculo de descuentos en precios usando reduce()</p>
+                </div>
+                <div class="exercise-item">
+                    <h4>ejercicio4.js</h4>
+                    <p>Manipulación de matrices bidimensionales con forEach()</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            <p>🚀 Cada ejemplo incluye código HTML y CSS comentado para facilitar el aprendizaje</p>
+            <p>📖 Consulta el README.md para más información detallada sobre cada tipo de diseño</p>
+        </div>
+    </div>
+</body>
+</html>
