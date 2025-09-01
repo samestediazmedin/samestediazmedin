@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Single Page - Ejemplo</title>
+    <link rel="stylesheet" href="../estilos/single-page.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">SinglePage</h1>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#acerca" class="nav-link">Acerca</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="section hero-section">
+        <div class="hero-content">
+            <h1>Diseño de Una Sola Página</h1>
+            <p>Una experiencia fluida donde todo el contenido se presenta en una sola página navegable</p>
+            <a href="#acerca" class="cta-button">Descubre Más</a>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-element element-1">🚀</div>
+            <div class="floating-element element-2">⭐</div>
+            <div class="floating-element element-3">💡</div>
+        </div>
+    </section>
+
+    <section id="acerca" class="section about-section">
+        <div class="container">
+            <h2>Acerca del Diseño Single Page</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>El diseño de una sola página (Single Page Application - SPA) presenta todo el contenido en una página continua, permitiendo una navegación fluida sin recargas.</p>
+                    
+                    <h3>Características principales:</h3>
+                    <ul>
+                        <li>✅ Navegación instantánea entre secciones</li>
+                        <li>✅ Experiencia de usuario fluida</li>
+                        <li>✅ Menor tiempo de carga inicial</li>
+                        <li>✅ Ideal para presentaciones narrativas</li>
+                        <li>✅ Perfecto para portfolios y landing pages</li>
+                    </ul>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Una sola página</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0ms</span>
+                            <span class="stat-label">Tiempo de recarga</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Scroll suave</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section services-section">
+        <div class="container">
+            <h2>Servicios y Ventajas</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Diseño Atractivo</h3>
+                    <p>Presentación visual impactante que mantiene la atención del usuario a lo largo de toda la experiencia.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Carga Rápida</h3>
+                    <p>Una vez cargada la página, la navegación es instantánea sin esperas adicionales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Experiencia optimizada para dispositivos móviles con navegación táctil intuitiva.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3>SEO Optimizado</h3>
+                    <p>Estructura optimizada para motores de búsqueda con URLs amigables y contenido accesible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+            <h2>Portfolio de Ejemplos</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Sitios Web</button>
+                <button class="filter-btn" data-filter="app">Aplicaciones</button>
+                <button class="filter-btn" data-filter="design">Diseño</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <span>🌐</span>
+                        <div class="portfolio-overlay">
+                            <h4>Sitio Web Corporativo</h4>
+                            <p>Landing page con diseño single page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <span>📱</span>
+                        <div class="portfolio-overlay">
+                            <h4>App Móvil</h4>
+                            <p>Aplicación con navegación fluida</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <span>🎨</span>
+                        <div class="portfolio-overlay">
+                            <h4>Portfolio Creativo</h4>
+                            <p>Showcase de trabajos artísticos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <span>🛒</span>
+                        <div class="portfolio-overlay">
+                            <h4>E-commerce</h4>
+                            <p>Tienda online con página única</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <span>💼</span>
+                        <div class="portfolio-overlay">
+                            <h4>Dashboard</h4>
+                            <p>Panel de control empresarial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-image">
+                        <span>📊</span>
+                        <div class="portfolio-overlay">
+                            <h4>Infografía</h4>
+                            <p>Presentación de datos visual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>¿Listo para tu Single Page?</h3>
+                    <p>Creemos juntos una experiencia web única y memorable para tus usuarios.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>info@singlepage.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+34 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Madrid, España</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Single Page Design. Diseño fluido y moderno.</p>
+            <div class="social-links">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling para navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Portfolio filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

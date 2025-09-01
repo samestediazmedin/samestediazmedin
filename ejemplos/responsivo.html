@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Responsivo - Ejemplo</title>
+    <link rel="stylesheet" href="../estilos/responsivo.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>Diseño Responsivo</h1>
+            <button class="mobile-menu-toggle" aria-label="Menú">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <h2>Diseño Responsivo Moderno</h2>
+                <p>Un diseño que se adapta perfectamente a cualquier dispositivo, desde móviles hasta monitores de escritorio ultrawide.</p>
+                <button class="cta-button">Descubre Más</button>
+            </div>
+        </section>
+
+        <section class="features" id="caracteristicas">
+            <div class="container">
+                <h2>Características Principales</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile First</h3>
+                        <p>Diseñado primero para móviles y luego escalado para pantallas más grandes.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔧</div>
+                        <h3>Flexible</h3>
+                        <p>Utiliza unidades flexibles como rem, em, %, vw y vh para adaptabilidad total.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Media Queries</h3>
+                        <p>Puntos de quiebre específicos para diferentes tamaños de pantalla.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🖼️</div>
+                        <h3>Imágenes Adaptativas</h3>
+                        <p>Imágenes que se escalan y adaptan según el dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples" id="ejemplos">
+            <div class="container">
+                <h2>Ejemplos de Adaptabilidad</h2>
+                <div class="example-container">
+                    <div class="responsive-image-example">
+                        <h3>Imagen Responsiva</h3>
+                        <div class="image-placeholder">
+                            <p>📷 Imagen que se adapta</p>
+                            <small>Esta imagen cambia de tamaño según la pantalla</small>
+                        </div>
+                    </div>
+                    
+                    <div class="responsive-text-example">
+                        <h3>Tipografía Fluida</h3>
+                        <p class="fluid-text">Este texto cambia de tamaño usando clamp() para mantenerse legible en cualquier pantalla.</p>
+                    </div>
+                </div>
+
+                <div class="breakpoints-demo">
+                    <h3>Puntos de Quiebre Activos</h3>
+                    <div class="breakpoint-indicator">
+                        <span class="mobile">📱 Móvil (hasta 768px)</span>
+                        <span class="tablet">📋 Tablet (769px - 1024px)</span>
+                        <span class="desktop">🖥️ Escritorio (1025px+)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>ejemplo@email.com</p>
+                    <p>+34 123 456 789</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociales</h3>
+                    <p>Twitter • LinkedIn • GitHub</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Información</h3>
+                    <p>&copy; 2024 Diseño Responsivo</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
